@@ -12,7 +12,7 @@ type List[T any] struct {
 	head *node[T]
 }
 
-func New[T any]() *List[T] {
+func NewSingly[T any]() *List[T] {
 	return &List[T]{}
 }
 

@@ -7,7 +7,7 @@ import (
 )
 
 func TestList_InsertHead(t *testing.T) {
-	list := New[int]()
+	list := NewSingly[int]()
 	list.InsertHead(3)
 	list.InsertHead(2)
 	list.InsertHead(1)
@@ -28,7 +28,7 @@ func TestList_InsertHead(t *testing.T) {
 }
 
 func TestList_InsertTail(t *testing.T) {
-	list := New[int]()
+	list := NewSingly[int]()
 	list.InsertTail(4)
 	list.InsertTail(5)
 	list.InsertTail(6)
@@ -49,7 +49,7 @@ func TestList_InsertTail(t *testing.T) {
 }
 
 func TestList_Insert(t *testing.T) {
-	list := New[int]()
+	list := NewSingly[int]()
 	list.InsertHead(1)
 	list.InsertTail(2)
 
@@ -73,7 +73,7 @@ func TestList_Insert(t *testing.T) {
 }
 
 func TestList_RemoveHead(t *testing.T) {
-	list := New[int]()
+	list := NewSingly[int]()
 	_ = list.Insert(1, 0)
 	_ = list.Insert(2, 1)
 	_ = list.Insert(3, 2)
@@ -98,7 +98,7 @@ func TestList_RemoveHead(t *testing.T) {
 }
 
 func TestList_RemoveTail(t *testing.T) {
-	list := New[int]()
+	list := NewSingly[int]()
 	_ = list.Insert(1, 0)
 	_ = list.Insert(2, 1)
 	_ = list.Insert(3, 2)
@@ -123,7 +123,7 @@ func TestList_RemoveTail(t *testing.T) {
 }
 
 func TestList_Remove(t *testing.T) {
-	list := New[int]()
+	list := NewSingly[int]()
 	_ = list.Insert(1, 0)
 	_ = list.Insert(2, 1)
 	_ = list.Insert(3, 2)
